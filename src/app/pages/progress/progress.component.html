@@ -1,3 +1,3 @@
-<p>
-  progress works!
-</p>
+<progress class="progress fade-medium" min="0" max="100" [value]="porcentaje"></progress>
+<hr>
+<app-incrementador (cambioValor)="actualizar($event)" [porcentaje]="porcentaje" ></app-incrementador>

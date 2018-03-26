@@ -1,3 +1,15 @@
-<p>
-  graficas1 works!
-</p>
+<div class="columns is-multiline">
+  <div class="column is-half">
+    <app-grafico-dona [chartData]="graficos.grafico1.data" [chartLabels]="graficos.grafico1.labels" [chartType]="graficos.grafico1.type"></app-grafico-dona>
+  </div>
+  <div class="column is-half">
+    <app-grafico-dona [chartData]="graficos.grafico2.data" [chartLabels]="graficos.grafico2.labels" [chartType]="graficos.grafico2.type"></app-grafico-dona>
+  </div>
+  <div class="column is-half">
+    <app-grafico-dona [chartData]="graficos.grafico3.data" [chartLabels]="graficos.grafico1.labels" [chartType]="graficos.grafico1.type"></app-grafico-dona>
+  </div>
+  <div class="column is-half">
+    <app-grafico-dona [chartData]="graficos.grafico4.data" [chartLabels]="graficos.grafico1.labels" [chartType]="graficos.grafico1.type"></app-grafico-dona>
+  </div>
+</div>
+

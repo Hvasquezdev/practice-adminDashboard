@@ -7,3 +7,7 @@ body {
 .fade-medium {
   transition: all .3s;
 }
+
+.main-container {
+  padding-right: 30px;
+}

@@ -8,6 +8,7 @@ import { ProgressComponent } from './progress/progress.component';
 // Modules
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages.routes';
+import { ComponentModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PAGES_ROUTES } from './pages.routes';
   ],
   imports: [
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    ComponentModule
   ]
 })
 export class PagesModule { }
