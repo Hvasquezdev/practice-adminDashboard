@@ -1,0 +1,18 @@
+.login-form {
+  position: relative;
+  z-index: 100;
+  background-color: #fafafa;
+  height: 100vh;
+  max-width: 350px;
+}
+
+form {
+  padding: 25px 10px;
+  margin-top: 30%;
+}
+
+.columns {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}

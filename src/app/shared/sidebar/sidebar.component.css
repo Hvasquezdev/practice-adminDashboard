@@ -1,0 +1,21 @@
+.menu {
+  background-color: #fafafa;
+  padding: 20px 5px;
+  border-right: solid #212121 .5px;
+  height: 100vh;
+  transition: all .2s;
+}
+
+.menu a {
+  transition: all .2s;
+  margin-bottom: 5px;
+}
+
+.menu a:hover {
+  background-color: #212121;
+  color: #fafafa;
+}
+
+.is-active {
+  background-color: #212121 !important;
+}
