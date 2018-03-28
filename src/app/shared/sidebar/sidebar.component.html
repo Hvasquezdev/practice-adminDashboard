@@ -1,15 +1,22 @@
 <aside class="menu">
   <p class="menu-label">
-    General
+    Menu General
   </p>
   <ul class="menu-list">
-    <li><a>Perfil Settings</a></li>
     <li>
-      <a [ngClass]="{'is-active': isActive}" (click)="isActive = !isActive">Manage Your Team</a>
+      <a class="is-active">Perfil</a>
+      <ul>
+        <li><a [routerLink]="['/login']" >Login</a></li>
+        <li><a [routerLink]="['/register']" >Register</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="menu-list">
+    <li *ngFor="let pMenu of menu">
+      <a [ngClass]="{'is-active': isActive}" (click)="isActive = !isActive">{{ pMenu.title }}</a>
       <ul *ngIf="isActive">
-        <li><a>Members</a></li>
-        <li><a>Plugins</a></li>
-        <li><a>Add a member</a></li>
+        <li *ngFor="let subMenu of pMenu.subMenu"><a routerLinkActive="is-active" [routerLink]="[ subMenu.url ]" >{{ subMenu.title }}</a></li>
       </ul>
     </li>
   </ul>

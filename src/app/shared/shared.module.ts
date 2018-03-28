@@ -1,10 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { NotFound404Component } from './not-found404/not-found404.component';
+
+// Services
+import { SidebarService } from '../services/service.index';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { NotFound404Component } from './not-found404/not-found404.component';
     NotFound404Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
+    CommonModule
+  ],
+  providers: [
+    SidebarService
   ]
 })
 export class SharedModule { }
